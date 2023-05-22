@@ -20,15 +20,16 @@ variable "resource_group" {
 ##################################################
 # IBMCLOUD Satellite Location and Host Variables
 ##################################################
-variable "location" {
-  description = "Location Name"
-  default     = "satellite-ibm"
+#LMA
+# variable "location" {
+#   description = "Location Name"
+#   default     = "satellite-ibm"
 
-  validation {
-    error_message = "Cluster name must begin and end with a letter and contain only letters, numbers, and - characters."
-    condition     = can(regex("^([a-z]|[a-z][-a-z0-9]*[a-z0-9])$", var.location))
-  }
-}
+#   validation {
+#     error_message = "Cluster name must begin and end with a letter and contain only letters, numbers, and - characters."
+#     condition     = can(regex("^([a-z]|[a-z][-a-z0-9]*[a-z0-9])$", var.location))
+#   }
+# }
 
 variable "managed_from" {
   description = "The IBM Cloud region to manage your Satellite location from. Choose a region close to your on-prem data center for better performance."

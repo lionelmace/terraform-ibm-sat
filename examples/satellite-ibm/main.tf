@@ -17,7 +17,8 @@ module "satellite-location" {
 
   source            = "../../modules/location"
   is_location_exist = var.is_location_exist
-  location          = var.location
+  #LMA location          = var.location
+  location          = "${var.is_prefix}-location"
   managed_from      = var.managed_from
   location_zones    = var.location_zones
   location_bucket   = var.location_bucket
