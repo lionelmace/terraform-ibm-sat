@@ -8,7 +8,8 @@ resource "ibm_satellite_location" "create_location" {
   location          = var.location
   managed_from      = var.managed_from
   zones             = (var.location_zones != null ? var.location_zones : null)
-  resource_group_id = data.ibm_resource_group.res_group.id
+  #LMA resource_group_id = data.ibm_resource_group.res_group.id
+  resource_group_id = ibm_resource_group.res_group.id
 
   cos_config {
     bucket = (var.location_bucket != null ? var.location_bucket : null)
