@@ -8,7 +8,7 @@
 #LMA }
 
 #LMA where to create resource
-resoure "ibm_resource_group" "resource_group" {
+resource "ibm_resource_group" "resource_group" {
   name = var.resource_group
 }
 
