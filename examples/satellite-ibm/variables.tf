@@ -134,7 +134,7 @@ variable "addl_hosts" {
 variable "is_prefix" {
   description = "Prefix to the Names of the VPC Infrastructure resources"
   type        = string
-  default     = "satellite-ibm"
+#LMA  default     = "satellite-ibm"
 }
 
 variable "public_key" {
