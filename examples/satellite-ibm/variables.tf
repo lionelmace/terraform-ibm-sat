@@ -174,7 +174,7 @@ variable "worker_image" {
 variable "create_cluster" {
   description = "Create Cluster: Disable this, not to provision a cluster"
   type        = bool
-  default     = false
+  # LMA default     = false
 }
 
 variable "cluster" {
