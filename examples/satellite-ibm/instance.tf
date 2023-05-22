@@ -3,7 +3,12 @@
 # Copyright 2021 IBM
 #####################################################
 
-data "ibm_resource_group" "resource_group" {
+#LMA data "ibm_resource_group" "resource_group" {
+#LMA   name = var.resource_group
+#LMA }
+
+#LMA where to create resource
+resoure "ibm_resource_group" "resource_group" {
   name = var.resource_group
 }
 
