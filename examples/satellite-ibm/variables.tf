@@ -35,7 +35,8 @@ variable "resource_group" {
 variable "managed_from" {
   description = "The IBM Cloud region to manage your Satellite location from. Choose a region close to your on-prem data center for better performance."
   type        = string
-  default     = "wdc"
+  #LMA default     = "wdc"
+  default     = "fra"
 }
 
 variable "location_zones" {
