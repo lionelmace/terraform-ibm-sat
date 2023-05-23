@@ -18,7 +18,7 @@
 ## ROKS Cluster
 ##############################################################################
 
-create_cluster = true
+create_cluster = false
 # create_cluster_worker_pool = false
 
 # Total number of worker nodes for cluster
