@@ -10,7 +10,8 @@ variable "ibmcloud_api_key" {
 
 variable "ibm_region" {
   description = "Region of the IBM Cloud account. Currently supported regions for satellite are us-east and eu-gb region."
-  default     = "us-east"
+  #LMA default     = "us-east"
+  default     = "eu-de"
 }
 
 variable "resource_group" {
@@ -40,7 +41,8 @@ variable "managed_from" {
 variable "location_zones" {
   description = "Allocate your hosts across these three zones"
   type        = list(string)
-  default     = ["us-east-1", "us-east-2", "us-east-3"]
+  default     = ["eu-de-1", "eu-de-2", "eu-de-3"]
+  #LMA default     = ["us-east-1", "us-east-2", "us-east-3"]
 }
 
 variable "location_bucket" {
